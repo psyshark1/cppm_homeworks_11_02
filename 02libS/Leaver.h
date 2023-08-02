@@ -1,16 +1,16 @@
 #pragma once
 #include<iostream>
 
-#ifndef LVR
+#ifdef LVR
 #define LVR_API __declspec(dllexport)
 #else
 #define LVR_API __declspec(dllimport)
 #endif // !LVR
 
-class Leaver
+class LVR_API Leaver
 {
 public:
-	LVR_API Leaver();
-	LVR_API ~Leaver();
-	LVR_API void leave(std::string msg);
+	Leaver();
+	~Leaver();
+	void leave(std::string msg);
 };

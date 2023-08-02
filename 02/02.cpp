@@ -11,5 +11,6 @@ int main()
 	std::cin >> name;
 	l->leave(name);
 	std::system("pause");
+	delete l;
 	return 0;
 }
